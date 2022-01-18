@@ -5,6 +5,9 @@
     'depends': [
         'base_setup'
     ],
+    'data': [
+      'views/properties.xml'
+    ],
     'installable': True,
     'application': True,
     'auto_install': False

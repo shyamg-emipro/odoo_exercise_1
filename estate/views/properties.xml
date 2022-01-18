@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="properties_action" model="ir.actions.act_window">
+        <field name="title">Properties</field>
+        <field name="property_type">Property Type</field>
+        <field name="post_code">post_code</field>
+        <field name="bedrooms">bedrooms</field>
+        <field name="living_area">living_area</field>
+        <field name="expected_price">expected_price</field>
+        <field name="selling_price">selling_price</field>
+    </record>
+    <menuitem id="properties_menu_root"
+              name="Properties"
+              />
+    <menuitem id="properties_menu_child"
+              name="Properties list"
+              parent="properties_menu_root"
+          />
+
+</odoo>
