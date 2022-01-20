@@ -3,10 +3,12 @@
     'summary': 'My Custom Module',
     'description': "",
     'depends': [
-        'base_setup'
+        'base_setup',
+        'sales_team'
     ],
     'data': [
-      'views/properties.xml'
+        'security/ir.model.access.csv',
+        'views/properties.xml'
     ],
     'installable': True,
     'application': True,

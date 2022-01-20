@@ -1,20 +1,86 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <record id="properties_action" model="ir.actions.act_window">
-        <field name="title">Properties</field>
-        <field name="property_type">Property Type</field>
-        <field name="post_code">post_code</field>
-        <field name="bedrooms">bedrooms</field>
-        <field name="living_area">living_area</field>
-        <field name="expected_price">expected_price</field>
-        <field name="selling_price">selling_price</field>
+    <record id="view_estate_properties_tree" model="ir.ui.view">
+        <field name="name">view.estate.properties.tree</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <tree string="Properties">
+                <field name="title" />
+                <field name="owner" />
+                <field name="owner_gender" />
+                <field name="property_type" />
+                <field name="post_code" />
+                <field name="bedrooms" />
+                <field name="living_area" />
+                <field name="expected_price" />
+                <field name="selling_price" />
+            </tree>
+        </field>
     </record>
-    <menuitem id="properties_menu_root"
-              name="Properties"
+
+    <record id="view_estate_properties_form" model="ir.ui.view">
+        <field name="name">view.estate.properties.form</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <form string="Properties">
+                <group>
+                    <field name="title" />
+                    <field name="owner" />
+                    <field name="owner_gender" />
+                    <field name="property_type" />
+                    <field name="post_code" />
+                </group>
+                <group>
+                    <field name="bedrooms" />
+                    <field name="living_area" />
+                    <field name="expected_price" />
+                    <field name="selling_price" />
+                </group>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="view_estate_properties_filter" model="ir.ui.view">
+        <field name="name">view.estate.properties.search</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <search string="Properties">
+                <field name="title" />
+                <field name="post_code" />
+                <field name="living_area" />
+                <field name="bedrooms" />
+                <filter name="filter_male" string="Male" domain="[('owner_gender', '=', 'Male')]" />
+                <filter name="filter_female" string="Female" domain="[('owner_gender', '=', 'Female')]" />
+                <filter name="filter_other" string="Other" domain="[('owner_gender', '=', 'Other')]" />
+                <group expand="0" string="Group By">
+                    <filter name="filter_gender" string="Gender" domain="[]" context="{'group_by': 'owner_gender'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_estate_properties" model="ir.actions.act_window">
+        <field name="name">Estate Properties</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_estate_properties_filter" />
+        <field name="help" type="html">
+            <p>Sorry, There are no properties to show!</p>
+        </field>
+    </record>
+    <menuitem id="menu_estate_properties_root"
+              name="Estate"
               />
-    <menuitem id="properties_menu_child"
-              name="Properties list"
-              parent="properties_menu_root"
-          />
+    <menuitem id="menu_estate_properties_sub1"
+              name="Property"
+              parent="menu_estate_properties_root"
+              />
+    <menuitem id="menu_estate_properties_sub2"
+              name="List of Properties"
+              parent="menu_estate_properties_sub1"
+              action="action_estate_properties"
+              />
 
 </odoo>
