@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_res_partner_demo_ept1_tree" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept1.tree</field>
+        <field name="model">res.partner.demo.ept1</field>
+        <field name="arch" type="xml">
+            <tree string="Contacts Details">
+                <field name="name" />
+                <field name="email" />
+                <field name="city" />
+                <field name="state" />
+                <field name="zip_code" />
+                <field name="country" />
+                <field name="birthdate" />
+                <field name="age" />
+                <field name="weight" />
+                <field name="gender" />
+                <field name="is_spectacles" />
+                <field name="photo" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_partner_demo_ept1_form" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept1.form</field>
+        <field name="model">res.partner.demo.ept1</field>
+        <field name="arch" type="xml">
+            <form string="Contact Person">
+                <sheet>
+                    <group>
+                        <field name="photo" widget="image" class="oe_avatar"/>
+                        <field name="is_spectacles" />
+                    </group>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="email" />
+                            <field name="city" />
+                            <field name="state" />
+                            <field name="zip_code" />
+                            <field name="country" />
+                        </group>
+                        <group>
+                            <field name="gender" />
+                            <field name="birthdate" />
+                            <field name="age" />
+                            <field name="weight" />
+                        </group>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page string="Details" name="res.partner.demo.ept1.details">
+                                <group>
+                                    <field name="details" />
+                                </group>
+                            </page>
+                            <page string="Description" name="res.partner.demo.ept1.description">
+                                <group>
+                                    <field name="description" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_partner_demo_ept1_filter" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept1.search</field>
+        <field name="model">res.partner.demo.ept1</field>
+        <field name="arch" type="xml">
+            <search string="Customers">
+                <field name="name" />
+                <field name="city" />
+                <field name="state" />
+                <field name="country" />
+                <field name="zip_code" />
+                <filter string="Male" name="filter_partner_ept1_male" domain="[('gender', '=', 'Male')]" />
+                <filter string="Female" name="filter_partner_ept1_female" domain="[('gender', '=', 'Female')]" />
+                <filter string="Other" name="filter_partner_ept1_other" domain="[('gender', '=', 'Other')]" />
+                <filter string="Spectacles" name="filter_partner_ept1_spectacles" domain="[('is_spectacles', '=', 'true')]" />
+                <group expand="0" string="Group By">
+                    <filter string="Country" name="filter_partner_ept1_country" domain="[]" context="{'group_by': 'country'}" />
+                    <filter string="State" name="filter_partner_ept1_state" domain="[]" context="{'group_by': 'state'}" />
+                    <filter string="City" name="filter_partner_ept1_city" domain="[]" context="{'group_by': 'city'}" />
+                    <filter string="Gender" name="filter_partner_ept1_gender" domain="[]" context="{'group_by': 'gender'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_res_partner_demo_ept1_window" model="ir.actions.act_window">
+        <field name="name">Customers</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner.demo.ept1</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_res_partner_demo_ept1_filter" />
+        <field name="help" type="html">
+            <p>Please, Create Records first!</p>
+        </field>
+    </record>
+    <menuitem id="menu_res_partner_demo_ept1_root"
+              name="Contacts"
+              />
+    <menuitem id="menu_res_partner_demo_ept1_sub1"
+              name="Customer Details"
+              parent="menu_res_partner_demo_ept1_root"
+              />
+    <menuitem id="menu_res_partner_demo_ept1_sub2"
+              name="Customers"
+              parent="menu_res_partner_demo_ept1_sub1"
+              action="action_res_partner_demo_ept1_window"
+              />
+</odoo>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="res_partner_demo_ept1.customer1" model="res.partner.demo.ept1">
+            <field name="name">Kishan</field>
+            <field name="email">kishan@dummy.com</field>
+            <field name="city">Rajkot</field>
+            <field name="state">Gujarat</field>
+            <field name="zip_code">360001</field>
+            <field name="country">India</field>
+            <field name="birthdate">1999-05-01</field>
+            <field name="description">My name is Kishan</field>
+            <field name="age">22</field>
+            <field name="weight">65</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">1</field>
+        </record>
+        <record id="res_partner_demo_ept1.customer2" model="res.partner.demo.ept1">
+            <field name="name">Karan</field>
+            <field name="email">karan@dummy.com</field>
+            <field name="city">Rajkot</field>
+            <field name="state">Gujarat</field>
+            <field name="zip_code">360001</field>
+            <field name="country">India</field>
+            <field name="birthdate">2000-05-01</field>
+            <field name="description">My name is Karan</field>
+            <field name="age">21</field>
+            <field name="weight">63</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+        </record>
+        <record id="res_partner_demo_ept1.customer3" model="res.partner.demo.ept1">
+            <field name="name">Kavya</field>
+            <field name="email">kavya@dummy.com</field>
+            <field name="city">Rajkot</field>
+            <field name="state">Gujarat</field>
+            <field name="zip_code">360001</field>
+            <field name="country">India</field>
+            <field name="birthdate">2001-05-01</field>
+            <field name="description">My name is Kavya</field>
+            <field name="age">20</field>
+            <field name="weight">61</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">1</field>
+        </record>
+        <record id="res_partner_demo_ept1.customer4" model="res.partner.demo.ept1">
+            <field name="name">Hetal</field>
+            <field name="email">hetal@dummy.com</field>
+            <field name="city">Ahmedabad</field>
+            <field name="state">Gujarat</field>
+            <field name="zip_code">380001</field>
+            <field name="country">India</field>
+            <field name="birthdate">2000-07-01</field>
+            <field name="description">My name is Hetal</field>
+            <field name="age">22</field>
+            <field name="weight">65</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">0</field>
+        </record>
+        <record id="res_partner_demo_ept1.customer5" model="res.partner.demo.ept1">
+            <field name="name">Abhay</field>
+            <field name="email">abhay@dummy.com</field>
+            <field name="city">Vadodara</field>
+            <field name="state">Gujarat</field>
+            <field name="zip_code">370001</field>
+            <field name="country">India</field>
+            <field name="birthdate">1995-05-01</field>
+            <field name="description">My name is Abhay</field>
+            <field name="age">27</field>
+            <field name="weight">68</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+        </record>
+    </data>
+</odoo>
