@@ -24,17 +24,19 @@
         <field name="arch" type="xml">
             <form string="Properties">
                 <group>
-                    <field name="title" />
-                    <field name="owner" />
-                    <field name="owner_gender" />
-                    <field name="property_type" />
-                    <field name="post_code" />
-                </group>
-                <group>
-                    <field name="bedrooms" />
-                    <field name="living_area" />
-                    <field name="expected_price" />
-                    <field name="selling_price" />
+                    <group>
+                        <field name="title" />
+                        <field name="owner" />
+                        <field name="owner_gender" />
+                        <field name="property_type" />
+                        <field name="post_code" />
+                    </group>
+                    <group>
+                        <field name="bedrooms" />
+                        <field name="living_area" />
+                        <field name="expected_price" />
+                        <field name="selling_price" />
+                    </group>
                 </group>
 
             </form>
