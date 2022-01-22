@@ -1,0 +1,18 @@
+Steps    Activity
+
+1    	Define new Module with apropreate name
+2       Define __init__.py and __manifest__.py files.
+3       Update the manifest file with apropreate details.
+4       Restart the odoo server.
+5       Go to Odoo->Apps->Update App List
+6       Search Module name and Install it.
+7       Define appropriate folder structure for models and views.
+8       Add appropriate model(.py) files in models folder
+9       create __init__.py file in models folder and app import lines 
+10      Add import line in main __init__.py file 
+11      Restart Odoo Server
+12      Go to Apps and Upgrade the installed module
+13      Create a security folder in module and cretae security file in security folder and add the entry in __manifest__.py file
+14      Create a views folder and add the entry in __manifest__.py file
+15      Restart Odoo Server
+16      Go to Apps and Upgrade the installed module

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="res_partner_demo_ept4_customer1" model="res.partner.demo.ept4">
+            <field name="name">Harshad</field>
+            <field name="email">harshad@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Kota</field>
+            <field name="state">Rajasthan</field>
+            <field name="country">India</field>
+            <field name="zip_code">11</field>
+            <field name="birthdate">1997-04-23</field>
+            <field name="age">24</field>
+            <field name="weight">62</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">1</field>
+            <field name="description">My name is Harshad</field>
+        </record>
+
+        <record id="res_partner_demo_ept4_customer2" model="res.partner.demo.ept4">
+            <field name="name">Harish</field>
+            <field name="email">harish@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Raipur</field>
+            <field name="state">Chhattisgarh</field>
+            <field name="country">India</field>
+            <field name="zip_code">11</field>
+            <field name="birthdate">1998-04-23</field>
+            <field name="age">23</field>
+            <field name="weight">61</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is Harish</field>
+        </record>
+
+        <record id="res_partner_demo_ept4_customer3" model="res.partner.demo.ept4">
+            <field name="name">George</field>
+            <field name="email">george@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Amsterdam</field>
+            <field name="state">Amsterdam</field>
+            <field name="country">Netherlands</field>
+            <field name="zip_code">11</field>
+            <field name="birthdate">1992-04-23</field>
+            <field name="age">29</field>
+            <field name="weight">67</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is George</field>
+        </record>
+
+        <record id="res_partner_demo_ept4_customer4" model="res.partner.demo.ept4">
+            <field name="name">Ishita</field>
+            <field name="email">ishita@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Noida</field>
+            <field name="state">Uttar Pradesh</field>
+            <field name="country">India</field>
+            <field name="zip_code">11</field>
+            <field name="birthdate">1997-04-23</field>
+            <field name="age">24</field>
+            <field name="weight">55</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">1</field>
+            <field name="description">My name is Ishita</field>
+        </record>
+
+        <record id="res_partner_demo_ept4_customer5" model="res.partner.demo.ept4">
+            <field name="name">Christina</field>
+            <field name="email">christina@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Venice</field>
+            <field name="state">Veneto</field>
+            <field name="country">Italy</field>
+            <field name="zip_code">11</field>
+            <field name="birthdate">1997-04-23</field>
+            <field name="age">24</field>
+            <field name="weight">62</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is Christina</field>
+        </record>
+    </data>
+</odoo>

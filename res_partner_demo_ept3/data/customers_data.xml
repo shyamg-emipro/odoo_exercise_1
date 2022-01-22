@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="res_partner_demo_ept3_customer1" model="res.partner.demo.ept3">
+            <field name="name">Sam</field>
+            <field name="email">sam@dummy.com</field>
+            <field name="street1">1</field>
+            <field name="street2">2</field>
+            <field name="city">London</field>
+            <field name="state">London</field>
+            <field name="country">UK</field>
+            <field name="zip_code">abc</field>
+            <field name="birthdate">1997-05-19</field>
+            <field name="age">24</field>
+            <field name="weight">64</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">1</field>
+            <field name="description">My name is Sam</field>
+        </record>
+
+        <record id="res_partner_demo_ept3_customer2" model="res.partner.demo.ept3">
+            <field name="name">Samay</field>
+            <field name="email">samay@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Delhi</field>
+            <field name="state">Delhi</field>
+            <field name="country">India</field>
+            <field name="zip_code">00</field>
+            <field name="birthdate">1998-07-12</field>
+            <field name="age">23</field>
+            <field name="weight">65</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is Samay</field>
+        </record>
+
+        <record id="res_partner_demo_ept3_customer3" model="res.partner.demo.ept3">
+            <field name="name">Cristina</field>
+            <field name="email">cristina@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Paris</field>
+            <field name="state">Paris</field>
+            <field name="country">France</field>
+            <field name="zip_code">90</field>
+            <field name="birthdate">1999-09-28</field>
+            <field name="age">22</field>
+            <field name="weight">59</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is Cristina</field>
+        </record>
+
+        <record id="res_partner_demo_ept3_customer4" model="res.partner.demo.ept3">
+            <field name="name">Jackma</field>
+            <field name="email">jackma@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Beijing</field>
+            <field name="state">Beijing</field>
+            <field name="country">China</field>
+            <field name="zip_code">abc</field>
+            <field name="birthdate">1987-09-19</field>
+            <field name="age">34</field>
+            <field name="weight">68</field>
+            <field name="gender">Male</field>
+            <field name="is_spectacles">0</field>
+            <field name="description">My name is Jackma</field>
+        </record>
+
+        <record id="res_partner_demo_ept3_customer5" model="res.partner.demo.ept3">
+            <field name="name">Priyanka</field>
+            <field name="email">priyanka@dummy.com</field>
+            <field name="street1">a</field>
+            <field name="street2">b</field>
+            <field name="city">Gandhinagar</field>
+            <field name="state">Gujarat</field>
+            <field name="country">India</field>
+            <field name="zip_code">390001</field>
+            <field name="birthdate">2000-09-21</field>
+            <field name="age">21</field>
+            <field name="weight">58</field>
+            <field name="gender">Female</field>
+            <field name="is_spectacles">1</field>
+            <field name="description">My name is Priyanka</field>
+        </record>
+    </data>
+</odoo>

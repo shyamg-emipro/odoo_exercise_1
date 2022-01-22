@@ -1,9 +1,9 @@
 {
-    'name': 'res.partner.demo.ept2',
-    'summary': 'Res Partner Demo EPT2',
+    'name': 'res.partner.demo.ept4',
+    'summary': 'Res Partner Demo EPT4',
     'description': """
         Requirement 1
-        Module 2
+        Module 4
     """,
     'depends': ['sale'],
     'data': ['security/ir.model.access.csv', 'views/customer_details.xml'],

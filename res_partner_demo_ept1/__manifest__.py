@@ -6,8 +6,8 @@
         This models is created for the learning purposes.
     """,
     'depends': ['sale'],
-    'data': ['security/ir.model.access.csv', 'views/partner_details.xml', 'data/customers_records.xml'],
-    'demo': [],
+    'data': ['security/ir.model.access.csv', 'views/partner_details.xml'],
+    'demo': ['data/customers_records.xml'],
     'installable': True,
     'application': True,
     'auto_install': False

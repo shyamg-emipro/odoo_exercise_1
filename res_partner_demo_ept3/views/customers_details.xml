@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_res_partner_demo_ept3_tree" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept3.tree</field>
+        <field name="model">res.partner.demo.ept3</field>
+        <field name="arch" type="xml">
+            <tree string="Contact Details">
+                <field name="name" />
+                <field name="email" />
+                <field name="birthdate" />
+                <field name="age" />
+                <field name="weight" />
+                <field name="gender" />
+                <field name="city" />
+                <field name="state" />
+                <field name="country" />
+                <field name="zip_code" />
+                <field name="is_spectacles" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_partner_demo_ept3_form" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept3.form</field>
+        <field name="model">res.partner.demo.ept3</field>
+        <field name="arch" type="xml">
+            <form string="Customer Details">
+                <sheet>
+                    <group>
+                        <field name="photo" widget="image" class="oe_avatar" />
+                    </group>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="email" />
+                            <field name="birthdate" />
+                            <field name="age" />
+                            <field name="gender" />
+                            <field name="weight" />
+                            <field name="is_spectacles" />
+                        </group>
+                        <group>
+                            <field name="street1" />
+                            <field name="street2" />
+                            <field name="city" />
+                            <field name="state" />
+                            <field name="country" />
+                            <field name="zip_code" />
+                        </group>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page string="Description" name="res.partner.demo.ept3.description">
+                                <group>
+                                    <field name="description" />
+                                </group>
+                            </page>
+
+                            <page string="Details" name="res.partner.demo.ept3.details">
+                                <group>
+                                    <field name="details" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_partner_demo_ept3_filter" model="ir.ui.view">
+        <field name="name">res.partner.demo.ept3.search</field>
+        <field name="model">res.partner.demo.ept3</field>
+        <field name="arch" type="xml">
+            <search string="Customer Search">
+                <field name="name" />
+                <field name="city" />
+                <field name="state" />
+                <field name="country" />
+                <field name="zip_code" />
+                <group expand="0" string="Group By">
+                    <filter name="res_partner_demo_ept3_country" string="Country" context="{'group_by': 'country'}" />
+                    <filter name="res_partner_demo_ept3_state" string="State" context="{'group_by': 'state'}" />
+                    <filter name="res_partner_demo_ept3_city" string="City" context="{'group_by': 'city'}" />
+                    <filter name="res_partner_demo_ept3_gender" string="Gender" context="{'group_by': 'gender'}" />
+                </group>
+                <filter name="res_partner_demo_ept3_male" string="Male" domain="[('gender', '=', 'Male')]" />
+                <filter name="res_partner_demo_ept3_female" string="Female" domain="[('gender', '=', 'Female')]" />
+                <filter name="res_partner_demo_ept3_transgender" string="Transgender" domain="[('gender', '=', 'Transgender')]" />
+                <filter name="res_partner_demo_ept3_spectacles" string="Male" domain="[('is_spectacles', '=', 'true')]" />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_res_partner_demo_ept3_window" model="ir.actions.act_window">
+        <field name="name">Customers Details</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_res_partner_demo_ept3_filter" />
+        <field name="res_model">res.partner.demo.ept3</field>
+        <field name="help" type="html">
+            <p>Opps, There are no records to show</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_res_partner_demo_ept3_root"
+              name="Contacts 3"
+              />
+    <menuitem id="menu_res_partner_demo_ept3_sub1"
+              name="Customer Details"
+              parent="menu_res_partner_demo_ept3_root"
+              />
+    <menuitem id="menu_res_partner_demo_ept3_sub2"
+              name="Customers"
+              parent="menu_res_partner_demo_ept3_sub1"
+              action="action_res_partner_demo_ept3_window"
+              />
+</odoo>
