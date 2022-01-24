@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_employee_demo_ept_tree" model="ir.ui.view">
+        <field name="name">employee.demo.ept.tree</field>
+        <field name="model">employee.demo.ept</field>
+        <field name="arch" type="xml">
+            <tree string="Employees">
+                <field name="name" />
+                <field name="department" />
+                <field name="job_position" />
+                <field name="gender" />
+                <field name="job_type" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_employee_demo_ept_form" model="ir.ui.view">
+        <field name="name">employee.demo.ept.form</field>
+        <field name="model">employee.demo.ept</field>
+        <field name="arch" type="xml">
+            <form string="Employee Details">
+                <group>
+                    <group>
+                        <field name="name" />
+                        <field name="department" />
+                        <field name="job_position" />
+                        <field name="gender" />
+                    </group>
+                    <group>
+                        <field name="salary" />
+                        <field name="hire_date" />
+                        <field name="job_type" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_employee_demo_ept_filter" model="ir.ui.view">
+        <field name="name">employee.demo.ept.search</field>
+        <field name="model">employee.demo.ept</field>
+        <field name="arch" type="xml">
+            <search string="Search Employee">
+                <field name="name" />
+                <field name="job_position" />
+                <field name="department" />
+                <filter name="employee_demo_ept_permanent" string="Permanent" domain="[('job_type', '=', 'Permanent')]" />
+                <filter name="employee_demo_ept_ad_hoc" string="Ad Hoc" domain="[('job_type', '=', 'Ad Hoc')]" />
+                <filter name="employee_demo_ept_male" string="Male" domain="[('gender', '=', 'Male')]" />
+                <filter name="employee_demo_ept_female" string="Female" domain="[('gender', '=', 'Female')]" />
+                <filter name="employee_demo_ept_transgender" string="Transgender" domain="[('gender', '=', 'Transgender')]" />
+                <group expand="0" string="Group By">
+                    <filter name="employee_demo_ept_job_position" string="Job Position" context="{'group_by': 'job_position'}" />
+                    <filter name="employee_demo_ept_department" string="Department" context="{'group_by': 'department'}" />
+                    <filter name="employee_demo_ept_job_type" string="Job Type" context="{'group_by': 'job_type'}" />
+                    <filter name="employee_demo_ept_gender" string="Gender" context="{'group_by': 'gender'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_employee_demo_ept_window" model="ir.actions.act_window">
+        <field name="name">Employees</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_employee_demo_ept_filter" />
+        <field name="res_model">employee.demo.ept</field>
+        <field name="help" type="html">
+            <p>Opps, There are no employee data to show!</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_employee_demo_ept_root"
+              name="Employee"
+              />
+
+    <menuitem id="menu_employee_demo_ept_sub1"
+              name="Employees"
+              parent="menu_employee_demo_ept_root"
+              />
+
+    <menuitem id="menu_employee_demo_ept_sub2"
+              name="All Employees"
+              parent="menu_employee_demo_ept_sub1"
+              action="action_employee_demo_ept_window"
+              />
+</odoo>

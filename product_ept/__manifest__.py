@@ -1,6 +1,6 @@
 {
-    'name': 'product.demo.ept',
-    'summary': 'Product Demo Ept',
+    'name': 'product_ept',
+    'summary': 'Product Ept',
     'description': """
         Requirement 5
     """,

@@ -1,6 +1,6 @@
 {
-    'name': 'localization.demo.ept',
-    'summary': 'Localization Demo Ept',
+    'name': 'localization_demo_ept',
+    'summary': 'Localization Ept',
     'description': """
         Requirement 2
         Requirement 3

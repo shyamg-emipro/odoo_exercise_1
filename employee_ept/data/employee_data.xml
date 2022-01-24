@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="employee_demo_ept_1" model="employee.demo.ept">
+            <field name="name">Karan</field>
+            <field name="department">Project</field>
+            <field name="job_position">Trainee</field>
+            <field name="salary">20000</field>
+            <field name="hire_date">2021-09-21</field>
+            <field name="gender">Male</field>
+            <field name="job_type">Permanent</field>
+        </record>
+
+        <record id="employee_demo_ept_2" model="employee.demo.ept">
+            <field name="name">Arjun</field>
+            <field name="department">ERP</field>
+            <field name="job_position">Senior Software Developer</field>
+            <field name="salary">45000</field>
+            <field name="hire_date">2020-04-24</field>
+            <field name="gender">Male</field>
+            <field name="job_type">Permanent</field>
+        </record>
+
+        <record id="employee_demo_ept_3" model="employee.demo.ept">
+            <field name="name">Ruhi</field>
+            <field name="department">ERP</field>
+            <field name="job_position">Junior Software Developer</field>
+            <field name="salary">35000</field>
+            <field name="hire_date">2020-10-29</field>
+            <field name="gender">Female</field>
+            <field name="job_type">Ad Hoc</field>
+        </record>
+
+        <record id="employee_demo_ept_4" model="employee.demo.ept">
+            <field name="name">Drashti</field>
+            <field name="department">Sales</field>
+            <field name="job_position">Sales Person</field>
+            <field name="salary">30000</field>
+            <field name="hire_date">2020-09-25</field>
+            <field name="gender">Female</field>
+            <field name="job_type">Permanent</field>
+        </record>
+
+        <record id="employee_demo_ept_5" model="employee.demo.ept">
+            <field name="name">Raghav</field>
+            <field name="department">Sales</field>
+            <field name="job_position">Sales Manager</field>
+            <field name="salary">40000</field>
+            <field name="hire_date">2020-02-03</field>
+            <field name="gender">Male</field>
+            <field name="job_type">Permanent</field>
+        </record>
+
+        <record id="employee_demo_ept_1" model="employee.demo.ept">
+            <field name="name">Rakesh</field>
+            <field name="department">Project</field>
+            <field name="job_position">Junior Software Developer</field>
+            <field name="salary">25000</field>
+            <field name="hire_date">2020-11-19</field>
+            <field name="gender">Male</field>
+            <field name="job_type">Ad Hoc</field>
+        </record>
+    </data>
+</odoo>
