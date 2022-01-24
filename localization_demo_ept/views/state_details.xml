@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_res_state_demo_ept_tree" model="ir.ui.view">
+        <field name="name">res.state.demo.ept.tree</field>
+        <field name="model">res.state.demo.ept</field>
+        <field name="arch" type="xml">
+            <tree string="States">
+                <field name="name" />
+                <field name="state_code" />
+                <field name="country_name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_state_demo_ept_form" model="ir.ui.view">
+        <field name="name">res.state.demo.ept.form</field>
+        <field name="model">res.state.demo.ept</field>
+        <field name="arch" type="xml">
+            <form string="State Details">
+                <group>
+                    <group>
+                        <field name="name" />
+                        <field name="state_code" />
+                    </group>
+                    <group>
+                        <field name="country_name" />
+                        <field name="active" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_res_state_demo_ept_filter" model="ir.ui.view">
+        <field name="name">res.state.demo.ept.search</field>
+        <field name="model">res.state.demo.ept</field>
+        <field name="arch" type="xml">
+            <search string="Search from States">
+                <field name="name" />
+                <field name="state_code" />
+                <group expand="0" string="Group By">
+                    <filter name="res_state_demo_ept_country_name" string="Country" context="{'group_by': 'country_name'}" />
+                </group>
+                <filter name="res_state_demo_ept_active" string="Active" domain="[('active', '=', '1')]" />
+                <filter name="res_state_demo_ept_inactive" string="Inactive" domain="[('active', '!=', '1')]" />
+            </search>
+        </field>
+    </record>
+
+    <record id="action_res_state_demo_ept_window" model="ir.actions.act_window">
+        <field name="name">States</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_res_state_demo_ept_filter" />
+        <field name="res_model">res.state.demo.ept</field>
+        <field name="context">{'active_test': False}</field>
+        <field name="help" type="html">
+            <p>Opps, there are no records available to show!</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_res_state_demo_ept_state"
+              name="States"
+              parent="menu_res_country_demo_ept_root"
+              />
+</odoo>

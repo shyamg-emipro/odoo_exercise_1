@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="product_demo_ept_1" model="product.demo.ept">
+            <field name="name">Chair</field>
+            <field name="barcode">prch01</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">3200</field>
+            <field name="cost_price">1200</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh01</field>
+            <field name="internal_note">Product Name is Chair</field>
+        </record>
+
+        <record id="product_demo_ept_2" model="product.demo.ept">
+            <field name="name">Dining Table</field>
+            <field name="barcode">prdt02</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">21000</field>
+            <field name="cost_price">11000</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh01</field>
+            <field name="internal_note">Product Name is Dining Table</field>
+        </record>
+
+        <record id="product_demo_ept_3" model="product.demo.ept">
+            <field name="name">Coffee Table</field>
+            <field name="barcode">prct03</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">5000</field>
+            <field name="cost_price">3000</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh02</field>
+            <field name="internal_note">Product Name is Coffee Table</field>
+        </record>
+
+        <record id="product_demo_ept_4" model="product.demo.ept">
+            <field name="name">Television</field>
+            <field name="barcode">prtv04</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">35000</field>
+            <field name="cost_price">25000</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh03</field>
+            <field name="internal_note">Product Name is Television</field>
+        </record>
+
+        <record id="product_demo_ept_5" model="product.demo.ept">
+            <field name="name">Smartphone</field>
+            <field name="barcode">prsp05</field>
+            <field name="on_sale">0</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">20000</field>
+            <field name="cost_price">15000</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh03</field>
+            <field name="internal_note">Product Name is Smartphone</field>
+        </record>
+
+        <record id="product_demo_ept_6" model="product.demo.ept">
+            <field name="name">TV Unit</field>
+            <field name="barcode">prtu06</field>
+            <field name="on_sale">0</field>
+            <field name="product_type">Storable</field>
+            <field name="sale_price">25000</field>
+            <field name="cost_price">15000</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh01</field>
+            <field name="internal_note">Product Name is TV Unit</field>
+        </record>
+
+        <record id="product_demo_ept_7" model="product.demo.ept">
+            <field name="name">Paper Bag</field>
+            <field name="barcode">prpb07</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Consumable</field>
+            <field name="sale_price">10</field>
+            <field name="cost_price">5</field>
+            <field name="active">1</field>
+            <field name="warehouse">wh00</field>
+            <field name="internal_note">Product Name is Paper Bag</field>
+        </record>
+
+        <record id="product_demo_ept_8" model="product.demo.ept">
+            <field name="name">Electronics Repair</field>
+            <field name="barcode">prer08</field>
+            <field name="on_sale">1</field>
+            <field name="product_type">Service</field>
+            <field name="sale_price">4000</field>
+            <field name="cost_price">2000</field>
+            <field name="active">1</field>
+            <field name="warehouse">whs</field>
+            <field name="internal_note">Electronics Repair service: smartphone display repair</field>
+        </record>
+    </data>
+</odoo>

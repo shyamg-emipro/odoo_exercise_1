@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_product_demo_ept_tree" model="ir.ui.view">
+        <field name="name">product.demo.ept.tree</field>
+        <field name="model">product.demo.ept</field>
+        <field name="arch" type="xml">
+            <tree string="Products">
+                <field name="sku" />
+                <field name="name" />
+                <field name="barcode" />
+                <field name="product_type" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_product_demo_ept_form" model="ir.ui.view">
+        <field name="name">product.demo.ept.form</field>
+        <field name="model">product.demo.ept</field>
+        <field name="arch" type="xml">
+            <form string="Product Details">
+                <sheet>
+                    <group>
+                        <field name="product_image" widget="image" class="oe_avatar" />
+                    </group>
+                    <group>
+                        <group>
+                            <field name="sku" />
+                            <field name="name" />
+                            <field name="barcode" />
+                            <field name="product_type" />
+                            <field name="on_sale" />
+                        </group>
+                        <group>
+                            <field name="sale_price" />
+                            <field name="cost_price" />
+                            <field name="warehouse" />
+                            <field name="active" />
+                        </group>
+                    </group>
+                    <group>
+                        <notebook>
+                            <page name="product_demo_ept_internal_note" string="Internal Note">
+                                <field name="internal_note" />
+                            </page>
+                            <page name="product_demo_ept_website_description" string="Website Description">
+                                <field name="website_description" />
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_product_demo_ept_filter" model="ir.ui.view">
+        <field name="name">product.demo.ept.search</field>
+        <field name="model">product.demo.ept</field>
+        <field name="arch" type="xml">
+            <search string="Search Product">
+                <field name="name" />
+                <field name="sku" />
+                <field name="barcode" />
+                <filter name="product_demo_ept_sold" string="On Sale" domain="[('on_sale', '=', 'true')]" />
+                <group string="Group By" expand="0">
+                    <filter name="product_demo_ept_product_type" string="Product Type" context="{'group_by': 'product_type'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_product_demo_ept_window" model="ir.actions.act_window">
+        <field name="name">Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_product_demo_ept_filter" />
+        <field name="res_model">product.demo.ept</field>
+        <field name="help" type="html">
+            <p>Opps, There are no products available to show!</p>
+        </field>
+    </record>
+
+    <menuitem id="menu_product_demo_ept_root"
+              name="My Sales"
+              />
+
+    <menuitem id="menu_product_demo_ept_sub1"
+              name="Products"
+              parent="menu_product_demo_ept_root"
+              action="action_product_demo_ept_window"
+              />
+</odoo>

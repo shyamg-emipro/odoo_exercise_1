@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="res_state_demo_ept_1" model="res.state.demo.ept">
+            <field name="name">Gujarat</field>
+            <field name="state_code">GJ</field>
+            <field name="country_name">India</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_2" model="res.state.demo.ept">
+            <field name="name">Maharashtra</field>
+            <field name="state_code">MH</field>
+            <field name="country_name">India</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_3" model="res.state.demo.ept">
+            <field name="name">Telangana</field>
+            <field name="state_code">TS</field>
+            <field name="country_name">India</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_4" model="res.state.demo.ept">
+            <field name="name">California</field>
+            <field name="state_code">CL</field>
+            <field name="country_name">United States of America</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_5" model="res.state.demo.ept">
+            <field name="name">Florida</field>
+            <field name="state_code">FL</field>
+            <field name="country_name">United States of America</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_6" model="res.state.demo.ept">
+            <field name="name">Ontario</field>
+            <field name="state_code">ON</field>
+            <field name="country_name">Canada</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_7" model="res.state.demo.ept">
+            <field name="name">British Columbia</field>
+            <field name="state_code">BC</field>
+            <field name="country_name">Canada</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_8" model="res.state.demo.ept">
+            <field name="name">Bali</field>
+            <field name="state_code">BL</field>
+            <field name="country_name">Indonesia</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_9" model="res.state.demo.ept">
+            <field name="name">North Holland</field>
+            <field name="state_code">NH</field>
+            <field name="country_name">Netherlands</field>
+            <field name="active">1</field>
+        </record>
+
+        <record id="res_state_demo_ept_10" model="res.state.demo.ept">
+            <field name="name">Kabul</field>
+            <field name="state_code">KB</field>
+            <field name="country_name">Afghanistan</field>
+            <field name="active">0</field>
+        </record>
+    </data>
+</odoo>
