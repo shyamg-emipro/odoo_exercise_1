@@ -62,5 +62,6 @@
     <menuitem id="menu_res_state_demo_ept_state"
               name="States"
               parent="menu_res_country_demo_ept_root"
+              action="action_res_state_demo_ept_window"
               />
 </odoo>

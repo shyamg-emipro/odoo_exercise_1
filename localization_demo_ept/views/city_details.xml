@@ -38,12 +38,8 @@
     </record>
 
     <menuitem id="menu_res_city_demo_ept_sub1"
-              name="Localization"
-              parent="menu_res_country_demo_ept_root"
-              />
-    <menuitem id="menu_res_city_demo_ept_sub2"
               name="City"
-              parent="menu_res_city_demo_ept_sub1"
+              parent="menu_res_country_demo_ept_root"
               action="action_res_city_demo_ept_window"
               />
 </odoo>

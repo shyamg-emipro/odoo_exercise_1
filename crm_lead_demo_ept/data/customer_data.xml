@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="crm_lead_demo_ept_1" model="crm.lead.demo.ept">
+            <field name="name">Rakesh</field>
+            <field name="email">rakesh@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Shyam</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">WhatsApp</field>
+            <field name="state">Qualified</field>
+            <field name="follow_up_date">2022-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_2" model="crm.lead.demo.ept">
+            <field name="name">Suresh</field>
+            <field name="email">suresh@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Manan</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">Email</field>
+            <field name="state">New</field>
+            <field name="follow_up_date">2020-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_3" model="crm.lead.demo.ept">
+            <field name="name">Raju</field>
+            <field name="email">raju@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Shyam</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">Television</field>
+            <field name="state">Proposition</field>
+            <field name="follow_up_date">2022-1-23</field>
+            <field name="won_date">2022-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_4" model="crm.lead.demo.ept">
+            <field name="name">Sagar</field>
+            <field name="email">sagar@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Kartik</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">SMS</field>
+            <field name="state">Won</field>
+            <field name="follow_up_date">2022-1-22</field>
+            <field name="won_date">2020-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_5" model="crm.lead.demo.ept">
+            <field name="name">Samay</field>
+            <field name="email">samay@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Manan</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">SMS</field>
+            <field name="state">Lost</field>
+            <field name="follow_up_date">2020-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_6" model="crm.lead.demo.ept">
+            <field name="name">Sanjay</field>
+            <field name="email">sanjay@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Shyam</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">Newspaper</field>
+            <field name="state">Won</field>
+            <field name="follow_up_date">2022-1-25</field>
+            <field name="won_date">2022-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_7" model="crm.lead.demo.ept">
+            <field name="name">Payal</field>
+            <field name="email">payal@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Shyam</field>
+            <field name="sales_team">TeamA</field>
+            <field name="channel">Facebook</field>
+            <field name="state">Won</field>
+            <field name="follow_up_date">2022-1-22</field>
+            <field name="won_date">2022-1-25</field>
+        </record>
+
+        <record id="crm_lead_demo_ept_8" model="crm.lead.demo.ept">
+            <field name="name">Jackson</field>
+            <field name="email">jackson@dummy.com</field>
+            <field name="phone">9898898990</field>
+            <field name="expected_revenue">23000</field>
+            <field name="salesperson">Kartik</field>
+            <field name="sales_team">Team A</field>
+            <field name="channel">Google Ads</field>
+            <field name="state">New</field>
+            <field name="follow_up_date">2022-1-25</field>
+        </record>
+    </data>
+</odoo>
